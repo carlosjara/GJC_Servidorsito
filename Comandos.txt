@@ -1,0 +1,13 @@
+npm init
+npm install express-generator -g 
+express --hbs
+npm install 
+npm install bootstrap@3 --save
+npm install grunt --save
+npm install grunt-contrib-copy --save-dev
+npm install grunt-exec --save-dev
+
+//modificar el package.json en el start
+//agregar node app.js
+npm start
+
