@@ -1,0 +1,36 @@
+body {
+  background: url(../images/fondo1.jpg);
+  padding: 100px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.presentacion 
+{
+    color: #000
+}
+
+.logo_login {
+  background: url(../images/logo_app.png);
+  width: 120px;
+  height: 120px;
+  margin: 0px 0 10% 25%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+.login_container
+{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 15;
+  top: 40%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+}

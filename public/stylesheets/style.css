@@ -1,0 +1,31 @@
+body{
+	font-family: "Open Sans";
+	background-color: darkgray;
+}
+.estudiante .header{
+	text-align: center;
+	clear: both;
+	width: 100%;
+}
+.estudiante .leftBar{
+	text-align: center;
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+.estudiante .Content{
+	text-align: center;
+	margin: auto;
+	float: left;
+	width: 60%;
+}
+.estudiante .RightBar{
+	text-align: center;
+	float: right;
+	width: 20%;
+}
+.estudiante .header img {
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	width: 15%;
+}
