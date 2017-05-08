@@ -2,6 +2,9 @@ body{
 	font-family: "Open Sans";
 	background-color: darkgray;
 }
+.estudiante {
+	margin: 20px;
+}
 .estudiante .header{
 	text-align: center;
 	clear: both;
@@ -18,6 +21,7 @@ body{
 	margin: auto;
 	float: left;
 	width: 60%;
+	margin-left: 15%;
 }
 .estudiante .RightBar{
 	text-align: center;
@@ -28,4 +32,29 @@ body{
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 	width: 15%;
+}
+
+.item_course {
+	margin-top: 15px;
+	background-color: rgb(0,255,0);
+}
+.item{
+	margin-left: 10%;
+}
+.Curso {
+	background-color: rgb(240,240,240);
+}
+
+.Actividad {
+	background-color: rgb(150,150,150);
+	border-style: inset;
+	color: white;
+}
+.Actividad .nombre {
+	text-align: left;
+}
+
+.Titulos {
+	background-color: rgb(200,200,200);
+	border-style: outset;
 }

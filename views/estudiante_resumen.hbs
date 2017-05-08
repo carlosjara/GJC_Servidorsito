@@ -2,42 +2,75 @@
 	<div class="header">
 		<nav id="navbar_index" class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header">
+            <div class="col-sm-4 navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="sr-only"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="../images/logo_app.png" class="img-responsive" alt="Cinque Terre"> 
+                <span></span><img src="../images/logo_app.png" class="img-responsive" alt="Cinque Terre"></span>
                 
             </div>
             
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="col-sm-8 collapse navbar-collapse" id="navbarCollapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="../estudiantes/resumen">Resumen</a></li>
+                    <li><a href="../estudiante_resumen/{{idUser}}"><div class="text-primary col-sm-6">Resumen</div></a></li>
                     <li><a href="/">Materias</a></li>
                     <li><a href="/">Tareas Pendientes</a></li>
                     <li><a href="/login"><div class="text-primary col-sm-6">{{datos.name}}</div> <div class="col-sm-6">Salir</div></a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-	</div>
-	<div class="leftBar">
-		
+        </nav>
 	</div>
 	<div class="Content">
-		{{#each datos.cursos}}
-		     <div class="col-sm-8">{{nombre_curso}}</div>
-		     <div class="col-sm-2">Estado</div>
-		     <div class="col-sm-2">Calificación</div>
-		     {{#each talleres}}
-		         <div class="col-sm-8">{{titulo}}</div>
-		         <div class="col-sm-2">{{estado}}</div>
-		         <div class="col-sm-2">{{calificacion}}</div>
-		     {{/each}}
+		 {{#each datos.cursos}}
+		     <div class="Curso col-sm-12">
+    		     <div class="Titulos item_curso col-sm-12">
+    		         
+    		         <div class="col-sm-8">{{this.nombre_curso}}</div>
+    		         <div class="col-sm-2">Estado</div>
+    		         <div class="col-sm-2">Calificación</div>
+    		     </div>
+    		     {{#each ../datos.talleres}}
+        		     {{#ifCond this.id_curso '==' ../this.id_curso}}
+        		         {{#ifCond this.activa '==' 1}}
+        		             {{#ifCond this.nota '!=' null}}
+        		             <div class="Actividad col-sm-12">
+        		                 <div class="nombre col-sm-8">Actividad: {{this.id_tarea}}</div>
+        		                 <div class="col-sm-2">Subida</div>
+        		                 <div class="col-sm-2">{{this.nota}}</div>
+        		             </div>
+        		             {{/ifCond}}
+        		             {{#ifCond this.nota '==' null}}
+                		             <div class="Actividad col-sm-12">
+                		                 <div class="nombre col-sm-8">Actividad: {{this.id_tarea}}</div>
+                		                 <div class="col-sm-2">Subida</div>
+                		                 <div class="col-sm-2">--</div>
+                		             </div>
+                		      {{/ifCond}}
+        		          {{/ifCond}}
+        		          {{#ifCond this.activa '==' 2}}
+        		             <div class="Actividad col-sm-12">
+        		                 <div class="nombre col-sm-8">Actividad: {{this.id_tarea}}</div>
+        		                 <div class="col-sm-2">Calificada</div>
+        		                 <div class="col-sm-2">{{this.nota}}</div>
+        		                 {{#ifCond this.nota '==' null}}
+                		             <div class="Actividad col-sm-12">
+                		                 <div class="nombre col-sm-8">Actividad: {{this.id_tarea}}</div>
+                		                 <div class="col-sm-2">Calificada</div>
+                		                 <div class="col-sm-2">--</div>
+                		             </div>
+                		          {{/ifCond}}
+        		             </div>
+        		          {{/ifCond}}
+        		     {{/ifCond}}
+    		     {{/each}}
+    		 </div>
         {{/each}}
+		 
+		 
 	</div>	
 	<div class="RightBar">
 

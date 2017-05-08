@@ -26,7 +26,6 @@ router.post('/',function(req,res){
         hasProblems : false
     };
     var done = _.after(2, function() {
-        console.log("llamado de dos",res1, res2);
         if (res1["count(id_usuario)"]==0) {
             user.name.problem = "El nombre de usuario no está registrado, favor comunicarse con un administrador.";
             user.name.hasProblem = true;
@@ -43,7 +42,6 @@ router.post('/',function(req,res){
         if (user.hasProblems){
             res.render('login',{title: 'Login', user: {name: req.body.name , password: req.body.password}, user_problems: user});
         }else{
-            
             var id = encodeURIComponent(res1["id_usuario"]);
             res.redirect('/estudiante_resumen/' + id);
         }
