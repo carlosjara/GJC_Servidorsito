@@ -20,6 +20,10 @@ var index = require('./routes/index');
 var login = require('./routes/login');
 var validation = require('./routes/validation');
 var estudiantes_resumen = require('./routes/estudiante_resumen');
+var est_materias = require('./routes/estudiante_materias');
+var profesores_resumen = require('./routes/profesor_resumen');
+var profesores_materias = require('./routes/profesor_materias');
+
 
 var app = express();
 
@@ -39,7 +43,9 @@ app.use('/index', index);
 app.use('/validation', validation);
 app.use('/login', login);
 app.use('/estudiante_resumen', estudiantes_resumen);
-
+app.use('/estudiante_materias', est_materias);
+app.use('/profesor_resumen', profesores_resumen);
+app.use('/profesor_materias', profesores_resumen);
 
 
 // catch 404 and forward to error handler

@@ -1,4 +1,4 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
 var Client = require('node-rest-client').Client;
 var _ = require('lodash');
@@ -32,32 +32,31 @@ Handlebars.registerHelper('ifCond', function (v1, operator, v2, options) {
     }
 });
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('estudiante_resumen');
+
+router.get('/',function(req,res,next){
+    res.render('estudiante_materias');
 });
 
 router.get('/:id', function(req, res) {
     var usuario_id = req.params.id;
     var userName = "";
     var userCursos = [];
-    var talleresUser = [];
+    var talleresDetalle= [];
     
-    var renderResumen = _.after(1,function() {
-        var json = {title: userName ,idUser: usuario_id, datos : { name: userName , cursos: userCursos, talleres: talleresUser}}
-        res.render('estudiante_resumen', json);
+    var renderMaterias = _.after(1,function() {
+        var json = {title: userName ,idUser: usuario_id, datos : { name: userName , cursos: userCursos, talleres: talleresDetalle}}
+        res.render('estudiante_materias', json);
     });
     
     var done = _.after(2, function() {
-        var talleres = [];
         var talleresName = {
             data: {id : usuario_id},
             headers: { "Content-Type": "application/json" }
         };
-        client.post("https://rest-hectordavid1228.c9users.io:8081/getTalleres", talleresName, function (data, response) {
+        client.post("https://rest-hectordavid1228.c9users.io:8081/getDetallesTalleres", talleresName, function (data, response) {
             // parsed response body as js object
-            talleresUser = data.talleres;
-            renderResumen();
+            talleresDetalle = data.talleres;
+            renderMaterias();
         });
         
     });
@@ -77,8 +76,6 @@ router.get('/:id', function(req, res) {
             // parsed response body as js object
             userCursos = userCursos.concat(data.res);
             done();
-   
- 
         }); 
     });
     

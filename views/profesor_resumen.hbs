@@ -1,0 +1,51 @@
+<div class="estudiante resumen">
+	<div class="header">
+		<nav id="navbar_index" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="col-sm-4 navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span></span><img src="../images/logo_app.png" class="img-responsive" alt="Cinque Terre"></span>
+                
+            </div>
+            
+            <div class="col-sm-8 collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../profesor_resumen/{{idUser}}"><div class="text-primary col-sm-6">Resumen</div></a></li>
+                    <li><a href="../profesor_materias/{{idUser}}">Materias</a></li>
+                    <li><a href="/">prueba2</a></li>
+                    <li><a href="/login"><div class="text-primary col-sm-6">{{datos.name}}</div> <div class="col-sm-6">Salir</div></a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+	</div>
+	<div class="Content">
+		 {{#each datos}}
+		     <div class="Curso col-sm-12">
+    		     <div class="Titulos item_curso col-sm-12">
+    		         <div class="col-sm-12" ><B>{{this.nombre_curso}}</B></div>
+    		     </div>
+    		     {{#each this.talleres}}
+    		         <div class="Titulos item_curso col-sm-12">
+    		         <div class="col-sm-12">Actividad: {{this.id_tarea}}</div>
+    		         </div>
+        		     {{#each ../estudiantes}}
+        		         <div class="Titulos item_curso col-sm-12">
+        		          <div class="nombre col-sm-8">{{this.nombre_usuario}}</div>
+                		  <div class="col-sm-4"><button>hola</button></div>
+                		 </div>
+        		     {{/each}}
+    		     {{/each}}
+    		 </div>
+        {{/each}}
+		 
+		 
+	</div>	
+	<div class="RightBar">
+
+</div>

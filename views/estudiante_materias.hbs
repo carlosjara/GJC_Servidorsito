@@ -1,0 +1,70 @@
+<div class="estudiante materias">
+	<div class="header">
+		<nav id="navbar_index" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="col-sm-4 navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span></span><img src="../images/logo_app.png" class="img-responsive" alt="Cinque Terre"></span>
+                
+            </div>
+            
+            <div class="col-sm-8 collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../estudiante_resumen/{{idUser}}">Resumen</a></li>
+                    <li><a href="../estudiante_materias/{{idUser}}"><div class="text-primary col-sm-6">Materias</div></a></li>
+                    <li><a href="/">Tareas Pendientes</a></li>
+                    <li><a href="/login"><div class="text-primary col-sm-6">{{datos.name}}</div> <div class="col-sm-6">Salir</div></a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+	</div>
+	<div class="Content">
+	    {{#each datos.cursos}}
+		     <div class="Curso col-sm-12" id="cursoBor">
+    		     <div class="Titulos col-sm-12">{{this.nombre_curso}}</div>
+    		     {{#each ../datos.talleres}}
+    		         {{#ifCond this.id_curso '==' ../this.id_curso}}
+    		             <div class="col-sm-12" id="cursoBor"></div>
+            		     <div class="col-sm-12">
+            		         <div class="Actividad col-sm-8">Actividad: {{this.id_tarea}}</div>
+            		         <div class="col-sm-1"></div>
+            		         <div class="Actividad col-sm-3">{{this.estado}}</div>
+            		     </div>
+            		     <div class="col-sm-12" align="left" >Descripción: </div>
+            		     <div class="col-sm-12" align="left" >{{this.descripcion}}</div>
+            		     <div class="col-sm-12">
+            		         <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:{{this.porcentaje}}%"></div>
+                             </div>
+            		         
+            		     </div>
+            		     <div class="col-sm-12">
+            		         <div class="col-sm-3" align="left">Fecha Fin</div>
+            		         <div class="col-sm-9" align="left">{{this.fecha_fin}}</div>
+            		     </div>
+            		     <div class="col-sm-12" align="left">
+            		         <div class="col-sm-3" align="left">Nombre Archivo: </div>
+            		         <div class="col-sm-7" align="left" >{{this.nombre}}</div>
+            		         <button type="button" class="col-sm-2 btn btn-primary">Seleccionar</button>
+            		     </div>
+            		     <div class="Archivo col-sm-12">
+            		         <div class="col-sm-7" align="left" >Nota</div>
+            		         <div class="col-sm-5" align="left">{{this.nota}}</div>
+            		     </div>
+            		     <div class="col-sm-4"></div>
+            		     <button type="button" class="col-sm-4 btn btn-primary">Enviar</button>
+            		     <div class="col-sm-4"></div>
+            		{{/ifCond}}
+    		     {{/each}}
+    		 </div>
+        {{/each}}
+	</div>	
+	<div class="RightBar"></div>
+
+</div>
