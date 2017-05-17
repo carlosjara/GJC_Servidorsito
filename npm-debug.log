@@ -1,42 +1,975 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.7.3/bin/node',
 1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.7.3/bin/npm',
-1 verbose cli   'start' ]
+1 verbose cli   'install',
+1 verbose cli   'jquery',
+1 verbose cli   '--save' ]
 2 info using npm@2.15.11
 3 info using node@v4.7.3
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart granescalaejemplos@0.0.0
-6 info start granescalaejemplos@0.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info granescalaejemplos@0.0.0 Failed to exec start script
-9 verbose stack Error: granescalaejemplos@0.0.0 start: `node app.js`
-9 verbose stack Exit status 3
-9 verbose stack     at EventEmitter.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
-9 verbose stack     at emitTwo (events.js:87:13)
-9 verbose stack     at EventEmitter.emit (events.js:172:7)
-9 verbose stack     at ChildProcess.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-9 verbose stack     at emitTwo (events.js:87:13)
-9 verbose stack     at ChildProcess.emit (events.js:172:7)
-9 verbose stack     at maybeClose (internal/child_process.js:854:16)
-9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:222:5)
-10 verbose pkgid granescalaejemplos@0.0.0
-11 verbose cwd /home/ubuntu/workspace/GJC_Servidorsito
-12 error Linux 4.9.17-c9
-13 error argv "/home/ubuntu/.nvm/versions/node/v4.7.3/bin/node" "/home/ubuntu/.nvm/versions/node/v4.7.3/bin/npm" "start"
-14 error node v4.7.3
-15 error npm  v2.15.11
-16 error code ELIFECYCLE
-17 error granescalaejemplos@0.0.0 start: `node app.js`
-17 error Exit status 3
-18 error Failed at the granescalaejemplos@0.0.0 start script 'node app.js'.
-18 error This is most likely a problem with the granescalaejemplos package,
-18 error not with npm itself.
-18 error Tell the author that this fails on your system:
-18 error     node app.js
-18 error You can get information on how to open an issue for this project with:
-18 error     npm bugs granescalaejemplos
-18 error Or if that isn't available, you can get their info via:
-18 error
-18 error     npm owner ls granescalaejemplos
-18 error There is likely additional logging output above.
-19 verbose exit [ 1, true ]
+4 verbose install initial load of /home/ubuntu/workspace/GJC_Servidorsito/package.json
+5 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/body-parser/package.json
+6 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/bootstrap/package.json
+7 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/cookie-parser/package.json
+8 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug/package.json
+9 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/express/package.json
+10 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/grunt/package.json
+11 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/grunt-contrib-connect/package.json
+12 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/grunt-contrib-copy/package.json
+13 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/grunt-contrib-watch/package.json
+14 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/grunt-exec/package.json
+15 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/hbs/package.json
+16 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery/package.json
+17 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/package.json
+18 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash/package.json
+19 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/morgan/package.json
+20 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/mysql/package.json
+21 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/node-rest-client/package.json
+22 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/serve-favicon/package.json
+23 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string/package.json
+24 verbose readDependencies loading dependencies from /home/ubuntu/workspace/GJC_Servidorsito/package.json
+25 verbose install jquery is installed as 3.2.1
+26 silly cache add args [ 'jquery', null ]
+27 verbose cache add spec jquery
+28 silly cache add parsed spec Result {
+28 silly cache add   raw: 'jquery',
+28 silly cache add   scope: null,
+28 silly cache add   name: 'jquery',
+28 silly cache add   rawSpec: '',
+28 silly cache add   spec: 'latest',
+28 silly cache add   type: 'tag' }
+29 silly addNamed jquery@latest
+30 verbose addNamed "latest" is being treated as a dist-tag for jquery
+31 info addNameTag [ 'jquery', 'latest' ]
+32 silly mapToRegistry name jquery
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'jquery',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   name: 'jquery',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri https://registry.npmjs.org/jquery
+37 verbose addNameTag registry:https://registry.npmjs.org/jquery not in flight; fetching
+38 verbose request uri https://registry.npmjs.org/jquery
+39 verbose request no auth needed
+40 info attempt registry request try #1 at 5:10:33 AM
+41 verbose request id b816a78898bce50a
+42 verbose etag W/"5917690c-15ffa"
+43 verbose lastModified Sat, 13 May 2017 20:14:04 GMT
+44 http request GET https://registry.npmjs.org/jquery
+45 http 304 https://registry.npmjs.org/jquery
+46 verbose headers { date: 'Wed, 17 May 2017 05:10:33 GMT',
+46 verbose headers   via: '1.1 varnish',
+46 verbose headers   'cache-control': 'max-age=300',
+46 verbose headers   etag: 'W/"5917690c-15ffa"',
+46 verbose headers   age: '126',
+46 verbose headers   connection: 'keep-alive',
+46 verbose headers   'x-served-by': 'cache-ord1742-ORD',
+46 verbose headers   'x-cache': 'HIT',
+46 verbose headers   'x-cache-hits': '1',
+46 verbose headers   'x-timer': 'S1494997833.144056,VS0,VE1',
+46 verbose headers   vary: 'Accept-Encoding' }
+47 silly get cb [ 304,
+47 silly get   { date: 'Wed, 17 May 2017 05:10:33 GMT',
+47 silly get     via: '1.1 varnish',
+47 silly get     'cache-control': 'max-age=300',
+47 silly get     etag: 'W/"5917690c-15ffa"',
+47 silly get     age: '126',
+47 silly get     connection: 'keep-alive',
+47 silly get     'x-served-by': 'cache-ord1742-ORD',
+47 silly get     'x-cache': 'HIT',
+47 silly get     'x-cache-hits': '1',
+47 silly get     'x-timer': 'S1494997833.144056,VS0,VE1',
+47 silly get     vary: 'Accept-Encoding' } ]
+48 verbose etag https://registry.npmjs.org/jquery from cache
+49 verbose get saving jquery to /home/ubuntu/.npm/registry.npmjs.org/jquery/.cache.json
+50 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+51 silly addNameTag next cb for jquery with tag latest
+52 silly addNamed jquery@3.2.1
+53 verbose addNamed "3.2.1" is a plain semver version for jquery
+54 silly cache afterAdd jquery@3.2.1
+55 verbose afterAdd /home/ubuntu/.npm/jquery/3.2.1/package/package.json not in flight; writing
+56 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+57 verbose afterAdd /home/ubuntu/.npm/jquery/3.2.1/package/package.json written
+58 silly install resolved [ { name: 'jquery',
+58 silly install resolved     title: 'jQuery',
+58 silly install resolved     description: 'JavaScript library for DOM operations',
+58 silly install resolved     version: '3.2.1',
+58 silly install resolved     main: 'dist/jquery.js',
+58 silly install resolved     homepage: 'https://jquery.com',
+58 silly install resolved     author:
+58 silly install resolved      { name: 'JS Foundation and other contributors',
+58 silly install resolved        url: 'https://github.com/jquery/jquery/blob/3.2.1/AUTHORS.txt' },
+58 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/jquery/jquery.git' },
+58 silly install resolved     keywords: [ 'jquery', 'javascript', 'browser', 'library' ],
+58 silly install resolved     bugs: { url: 'https://github.com/jquery/jquery/issues' },
+58 silly install resolved     license: 'MIT',
+58 silly install resolved     dependencies: {},
+58 silly install resolved     devDependencies:
+58 silly install resolved      { 'babel-preset-es2015': '6.6.0',
+58 silly install resolved        commitplease: '2.6.1',
+58 silly install resolved        'core-js': '2.2.2',
+58 silly install resolved        'cross-spawn': '2.2.3',
+58 silly install resolved        'eslint-config-jquery': '1.0.0',
+58 silly install resolved        grunt: '1.0.1',
+58 silly install resolved        'grunt-babel': '6.0.0',
+58 silly install resolved        'grunt-cli': '1.2.0',
+58 silly install resolved        'grunt-compare-size': '0.4.2',
+58 silly install resolved        'grunt-contrib-uglify': '1.0.1',
+58 silly install resolved        'grunt-contrib-watch': '1.0.0',
+58 silly install resolved        'grunt-eslint': '19.0.0',
+58 silly install resolved        'grunt-git-authors': '3.2.0',
+58 silly install resolved        'grunt-jsonlint': '1.0.7',
+58 silly install resolved        'grunt-newer': '1.2.0',
+58 silly install resolved        'grunt-npmcopy': '0.1.0',
+58 silly install resolved        'gzip-js': '0.3.2',
+58 silly install resolved        husky: '0.11.4',
+58 silly install resolved        insight: '0.8.1',
+58 silly install resolved        jsdom: '5.6.1',
+58 silly install resolved        'load-grunt-tasks': '3.5.0',
+58 silly install resolved        'native-promise-only': '0.8.1',
+58 silly install resolved        'promises-aplus-tests': '2.1.2',
+58 silly install resolved        q: '1.4.1',
+58 silly install resolved        'qunit-assert-step': '1.0.3',
+58 silly install resolved        qunitjs: '1.23.1',
+58 silly install resolved        requirejs: '2.2.0',
+58 silly install resolved        sinon: '1.17.3',
+58 silly install resolved        sizzle: '2.3.3',
+58 silly install resolved        'strip-json-comments': '2.0.1',
+58 silly install resolved        testswarm: '1.1.0' },
+58 silly install resolved     scripts:
+58 silly install resolved      { build: 'npm install && grunt',
+58 silly install resolved        start: 'grunt watch',
+58 silly install resolved        test: 'grunt && grunt test:slow',
+58 silly install resolved        precommit: 'grunt lint:newer',
+58 silly install resolved        commitmsg: 'node node_modules/commitplease' },
+58 silly install resolved     commitplease:
+58 silly install resolved      { nohook: true,
+58 silly install resolved        components: [Object],
+58 silly install resolved        markerPattern: '^((clos|fix|resolv)(e[sd]|ing))|^(refs?)',
+58 silly install resolved        ticketPattern: '^((Closes|Fixes) ([a-zA-Z]{2,}-)[0-9]+)|^(Refs? [^#])' },
+58 silly install resolved     gitHead: '77d2a51d0520d2ee44173afdf4e40a9201f5964e',
+58 silly install resolved     _id: 'jquery@3.2.1',
+58 silly install resolved     _shasum: '5c4d9de652af6cd0a770154a631bba12b015c787',
+58 silly install resolved     _from: 'jquery@latest',
+58 silly install resolved     _npmVersion: '4.4.4',
+58 silly install resolved     _nodeVersion: '7.7.3',
+58 silly install resolved     _npmUser: { name: 'timmywil', email: '4timmywil@gmail.com' },
+58 silly install resolved     dist:
+58 silly install resolved      { shasum: '5c4d9de652af6cd0a770154a631bba12b015c787',
+58 silly install resolved        tarball: 'https://registry.npmjs.org/jquery/-/jquery-3.2.1.tgz' },
+58 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+58 silly install resolved     _npmOperationalInternal:
+58 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+58 silly install resolved        tmp: 'tmp/jquery-3.2.1.tgz_1490036530067_0.19497186387889087' },
+58 silly install resolved     directories: {},
+58 silly install resolved     _resolved: 'https://registry.npmjs.org/jquery/-/jquery-3.2.1.tgz',
+58 silly install resolved     readme: 'ERROR: No README data found!' } ]
+59 info install jquery@3.2.1 into /home/ubuntu/workspace/GJC_Servidorsito
+60 info installOne jquery@3.2.1
+61 verbose installOne of jquery to /home/ubuntu/workspace/GJC_Servidorsito not in flight; installing
+62 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+63 verbose lock using /home/ubuntu/.npm/_locks/jquery-015771ffcafa8479.lock for /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery
+64 silly install write writing jquery 3.2.1 to /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery
+65 verbose unbuild node_modules/jquery
+66 info preuninstall jquery@3.2.1
+67 info uninstall jquery@3.2.1
+68 verbose unbuild rmStuff jquery@3.2.1 from /home/ubuntu/workspace/GJC_Servidorsito/node_modules
+69 info postuninstall jquery@3.2.1
+70 silly gentlyRm /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery is being purged from base /home/ubuntu/workspace/GJC_Servidorsito
+71 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery
+72 silly vacuum-fs purging /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery
+73 silly vacuum-fs quitting because other entries in /home/ubuntu/workspace/GJC_Servidorsito/node_modules
+74 verbose tar unpack /home/ubuntu/.npm/jquery/3.2.1/package.tgz
+75 verbose tar unpacking to /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery
+76 silly gentlyRm /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery is being purged
+77 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery
+78 silly gunzTarPerm modes [ '755', '644' ]
+79 silly gunzTarPerm extractEntry package.json
+80 silly gunzTarPerm extractEntry README.md
+81 silly gunzTarPerm extractEntry AUTHORS.txt
+82 silly gunzTarPerm extractEntry LICENSE.txt
+83 silly gunzTarPerm extractEntry bower.json
+84 silly gunzTarPerm extractEntry dist/core.js
+85 silly gunzTarPerm extractEntry dist/jquery.js
+86 silly gunzTarPerm extractEntry dist/jquery.min.js
+87 silly gunzTarPerm extractEntry dist/jquery.slim.js
+88 silly gunzTarPerm extractEntry dist/jquery.slim.min.js
+89 silly gunzTarPerm extractEntry dist/jquery.min.map
+90 silly gunzTarPerm extractEntry dist/jquery.slim.min.map
+91 silly gunzTarPerm extractEntry external/sizzle/LICENSE.txt
+92 silly gunzTarPerm extractEntry external/sizzle/dist/sizzle.js
+93 silly gunzTarPerm extractEntry external/sizzle/dist/sizzle.min.js
+94 silly gunzTarPerm extractEntry external/sizzle/dist/sizzle.min.map
+95 silly gunzTarPerm extractEntry src/wrap.js
+96 silly gunzTarPerm extractEntry src/core.js
+97 silly gunzTarPerm extractEntry src/selector.js
+98 silly gunzTarPerm extractEntry src/css.js
+99 silly gunzTarPerm extractEntry src/selector-sizzle.js
+100 silly gunzTarPerm extractEntry src/serialize.js
+101 silly gunzTarPerm extractEntry src/selector-native.js
+102 silly gunzTarPerm extractEntry src/deferred.js
+103 silly gunzTarPerm extractEntry src/deprecated.js
+104 silly gunzTarPerm extractEntry src/dimensions.js
+105 silly gunzTarPerm extractEntry src/queue.js
+106 silly gunzTarPerm extractEntry src/callbacks.js
+107 silly gunzTarPerm extractEntry src/offset.js
+108 silly gunzTarPerm extractEntry src/attributes.js
+109 silly gunzTarPerm extractEntry src/manipulation.js
+110 silly gunzTarPerm extractEntry src/traversing.js
+111 silly gunzTarPerm extractEntry src/event.js
+112 silly gunzTarPerm extractEntry src/ajax.js
+113 silly gunzTarPerm extractEntry src/jquery.js
+114 silly gunzTarPerm extractEntry src/data.js
+115 silly gunzTarPerm extractEntry src/effects.js
+116 silly gunzTarPerm extractEntry src/data/Data.js
+117 silly gunzTarPerm extractEntry src/data/var/acceptData.js
+118 silly gunzTarPerm extractEntry src/data/var/dataPriv.js
+119 silly gunzTarPerm extractEntry src/data/var/dataUser.js
+120 silly gunzTarPerm extractEntry src/exports/amd.js
+121 silly gunzTarPerm extractEntry src/exports/global.js
+122 silly gunzTarPerm extractEntry src/event/ajax.js
+123 silly gunzTarPerm extractEntry src/event/alias.js
+124 silly gunzTarPerm extractEntry src/event/focusin.js
+125 silly gunzTarPerm extractEntry src/event/support.js
+126 silly gunzTarPerm extractEntry src/event/trigger.js
+127 silly gunzTarPerm extractEntry src/ajax/jsonp.js
+128 silly gunzTarPerm extractEntry src/ajax/load.js
+129 silly gunzTarPerm extractEntry src/ajax/parseXML.js
+130 silly gunzTarPerm extractEntry src/ajax/script.js
+131 silly gunzTarPerm extractEntry src/ajax/xhr.js
+132 silly gunzTarPerm extractEntry src/ajax/var/location.js
+133 silly gunzTarPerm extractEntry src/ajax/var/nonce.js
+134 silly gunzTarPerm extractEntry src/ajax/var/rquery.js
+135 silly gunzTarPerm extractEntry src/queue/delay.js
+136 silly gunzTarPerm extractEntry src/effects/Tween.js
+137 silly gunzTarPerm extractEntry src/effects/animatedSelector.js
+138 silly gunzTarPerm extractEntry src/deferred/exceptionHook.js
+139 silly gunzTarPerm extractEntry src/manipulation/_evalUrl.js
+140 silly gunzTarPerm extractEntry src/manipulation/buildFragment.js
+141 silly gunzTarPerm extractEntry src/manipulation/getAll.js
+142 silly gunzTarPerm extractEntry src/manipulation/setGlobalEval.js
+143 silly gunzTarPerm extractEntry src/manipulation/support.js
+144 silly gunzTarPerm extractEntry src/manipulation/wrapMap.js
+145 silly gunzTarPerm extractEntry src/manipulation/var/rcheckableType.js
+146 silly gunzTarPerm extractEntry src/manipulation/var/rscriptType.js
+147 silly gunzTarPerm extractEntry src/manipulation/var/rtagName.js
+148 silly gunzTarPerm extractEntry src/css/addGetHookIf.js
+149 silly gunzTarPerm extractEntry src/css/adjustCSS.js
+150 silly gunzTarPerm extractEntry src/css/curCSS.js
+151 silly gunzTarPerm extractEntry src/css/hiddenVisibleSelectors.js
+152 silly gunzTarPerm extractEntry src/css/showHide.js
+153 silly gunzTarPerm extractEntry src/css/support.js
+154 silly gunzTarPerm extractEntry src/css/var/cssExpand.js
+155 silly gunzTarPerm extractEntry src/css/var/getStyles.js
+156 silly gunzTarPerm extractEntry src/css/var/isHiddenWithinTree.js
+157 silly gunzTarPerm extractEntry src/css/var/rmargin.js
+158 silly gunzTarPerm extractEntry src/css/var/rnumnonpx.js
+159 silly gunzTarPerm extractEntry src/css/var/swap.js
+160 silly gunzTarPerm extractEntry src/core/DOMEval.js
+161 silly gunzTarPerm extractEntry src/core/init.js
+162 silly gunzTarPerm extractEntry src/core/nodeName.js
+163 silly gunzTarPerm extractEntry src/core/parseHTML.js
+164 silly gunzTarPerm extractEntry src/core/access.js
+165 silly gunzTarPerm extractEntry src/core/ready.js
+166 silly gunzTarPerm extractEntry src/core/readyException.js
+167 silly gunzTarPerm extractEntry src/core/stripAndCollapse.js
+168 silly gunzTarPerm extractEntry src/core/support.js
+169 silly gunzTarPerm extractEntry src/core/ready-no-deferred.js
+170 silly gunzTarPerm extractEntry src/core/var/rsingleTag.js
+171 silly gunzTarPerm extractEntry src/traversing/findFilter.js
+172 silly gunzTarPerm extractEntry src/traversing/var/dir.js
+173 silly gunzTarPerm extractEntry src/traversing/var/rneedsContext.js
+174 silly gunzTarPerm extractEntry src/traversing/var/siblings.js
+175 silly gunzTarPerm extractEntry src/attributes/attr.js
+176 silly gunzTarPerm extractEntry src/attributes/classes.js
+177 silly gunzTarPerm extractEntry src/attributes/prop.js
+178 silly gunzTarPerm extractEntry src/attributes/support.js
+179 silly gunzTarPerm extractEntry src/attributes/val.js
+180 silly gunzTarPerm extractEntry src/var/ObjectFunctionString.js
+181 silly gunzTarPerm extractEntry src/var/documentElement.js
+182 silly gunzTarPerm extractEntry src/var/fnToString.js
+183 silly gunzTarPerm extractEntry src/var/getProto.js
+184 silly gunzTarPerm extractEntry src/var/document.js
+185 silly gunzTarPerm extractEntry src/var/indexOf.js
+186 silly gunzTarPerm extractEntry src/var/pnum.js
+187 silly gunzTarPerm extractEntry src/var/push.js
+188 silly gunzTarPerm extractEntry src/var/rcssNum.js
+189 silly gunzTarPerm extractEntry src/var/rnothtmlwhite.js
+190 silly gunzTarPerm extractEntry src/var/concat.js
+191 silly gunzTarPerm extractEntry src/var/slice.js
+192 silly gunzTarPerm extractEntry src/var/class2type.js
+193 silly gunzTarPerm extractEntry src/var/support.js
+194 silly gunzTarPerm extractEntry src/var/arr.js
+195 silly gunzTarPerm extractEntry src/var/toString.js
+196 silly gunzTarPerm extractEntry src/var/hasOwn.js
+197 silly gunzTarPerm extractEntry src/.eslintrc.json
+198 verbose write writing to /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery/package.json
+199 info preinstall jquery@3.2.1
+200 verbose readDependencies loading dependencies from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery/package.json
+201 verbose readDependencies loading dependencies from /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery/package.json
+202 silly install resolved []
+203 verbose about to build /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery
+204 info build /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery
+205 info linkStuff jquery@3.2.1
+206 silly linkStuff jquery@3.2.1 has /home/ubuntu/workspace/GJC_Servidorsito/node_modules as its parent node_modules
+207 verbose linkBins jquery@3.2.1
+208 verbose linkMans jquery@3.2.1
+209 verbose rebuildBundles jquery@3.2.1
+210 info install jquery@3.2.1
+211 info postinstall jquery@3.2.1
+212 verbose unlock done using /home/ubuntu/.npm/_locks/jquery-015771ffcafa8479.lock for /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jquery
+213 verbose validateInstall loading /home/ubuntu/workspace/GJC_Servidorsito/package.json for validation
+214 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma requires lodash@'^3.8.0' but will load
+214 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+214 warn unmet dependency which is version 4.17.4
+215 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha requires debug@'2.6.0' but will load
+215 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+215 warn unmet dependency which is version 2.6.6
+216 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/selenium-standalone requires request@'2.79.0' but will load
+216 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+216 warn unmet dependency which is version 2.81.0
+217 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/wd requires lodash@'4.16.2' but will load
+217 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+217 warn unmet dependency which is version 4.17.4
+218 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/wd requires q@'1.4.1' but will load
+218 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q,
+218 warn unmet dependency which is version 1.5.0
+219 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/wd requires request@'2.79.0' but will load
+219 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+219 warn unmet dependency which is version 2.81.0
+220 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/jscs requires lodash@'~3.10.0' but will load
+220 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+220 warn unmet dependency which is version 4.17.4
+221 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma requires lodash@'^3.8.0' but will load
+221 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+221 warn unmet dependency which is version 4.17.4
+222 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-webpack requires lodash@'^3.8.0' but will load
+222 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+222 warn unmet dependency which is version 4.17.4
+223 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/mocha requires debug@'2.2.0' but will load
+223 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+223 warn unmet dependency which is version 2.6.6
+224 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/webpack requires acorn@'^3.0.0' but will load
+224 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/acorn,
+224 warn unmet dependency which is version 4.0.11
+225 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-sauce-launcher requires wd@'~0.3.4' but will load
+225 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/wd,
+225 warn unmet dependency which is version 1.2.0
+226 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-sauce-launcher requires q@'~0.9.6' but will load
+226 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q,
+226 warn unmet dependency which is version 1.5.0
+227 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/cover requires underscore.string@'2.0.x' but will load
+227 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+227 warn unmet dependency which is version 3.3.4
+228 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/grunt requires colors@'~0.6.2' but will load
+228 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+228 warn unmet dependency which is version 1.1.2
+229 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/grunt requires rimraf@'~2.2.8' but will load
+229 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+229 warn unmet dependency which is version 2.6.1
+230 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/grunt requires lodash@'~0.9.2' but will load
+230 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+230 warn unmet dependency which is version 4.17.4
+231 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+231 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+231 warn unmet dependency which is version 3.3.4
+232 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/grunt-cli/node_modules/findup-sync requires lodash@'~2.4.1' but will load
+232 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+232 warn unmet dependency which is version 4.17.4
+233 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/grunt-cli/node_modules/grunt-contrib-jshint requires jshint@'~1.0.0' but will load
+233 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/jshint,
+233 warn unmet dependency which is version 2.1.11
+234 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/grunt-contrib-uglify/node_modules/grunt-contrib-clean requires rimraf@'~2.2.1' but will load
+234 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+234 warn unmet dependency which is version 2.6.1
+235 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/grunt-contrib-uglify/node_modules/grunt-contrib-jshint requires jshint@'~2.8.0' but will load
+235 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/jshint,
+235 warn unmet dependency which is version 2.1.11
+236 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/grunt-contrib-uglify/node_modules/grunt-contrib-nodeunit requires nodeunit@'~0.9.0' but will load
+236 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/nodeunit,
+236 warn unmet dependency which is version 0.10.2
+237 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q/node_modules/opener/node_modules/jshint requires lodash@'3.7.x' but will load
+237 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+237 warn unmet dependency which is version 4.17.4
+238 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request/node_modules/coveralls requires request@'2.79.0' but will load
+238 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+238 warn unmet dependency which is version 2.81.0
+239 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request/node_modules/karma-coverage requires lodash@'^3.8.0' but will load
+239 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+239 warn unmet dependency which is version 4.17.4
+240 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request/node_modules/phantomjs-prebuilt requires request@'~2.79.0' but will load
+240 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+240 warn unmet dependency which is version 2.81.0
+241 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/tough-cookie/node_modules/punycode/node_modules/coveralls requires request@'2.79.0' but will load
+241 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+241 warn unmet dependency which is version 2.81.0
+242 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/tough-cookie/node_modules/punycode/node_modules/grunt requires async@'~0.1.22' but will load
+242 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/tough-cookie/node_modules/async,
+242 warn unmet dependency which is version 1.5.2
+243 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/tough-cookie/node_modules/punycode/node_modules/grunt requires colors@'~0.6.2' but will load
+243 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+243 warn unmet dependency which is version 1.1.2
+244 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/tough-cookie/node_modules/punycode/node_modules/grunt requires rimraf@'~2.2.8' but will load
+244 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+244 warn unmet dependency which is version 2.6.1
+245 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/tough-cookie/node_modules/punycode/node_modules/grunt requires lodash@'~0.9.2' but will load
+245 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+245 warn unmet dependency which is version 4.17.4
+246 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/tough-cookie/node_modules/punycode/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+246 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+246 warn unmet dependency which is version 3.3.4
+247 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/bower-registry-client requires request@'~2.51.0' but will load
+247 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+247 warn unmet dependency which is version 2.81.0
+248 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/bower-registry-client requires rimraf@'~2.2.0' but will load
+248 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+248 warn unmet dependency which is version 2.6.1
+249 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/gulp requires semver@'^4.1.0' but will load
+249 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/semver,
+249 warn unmet dependency which is version 5.3.0
+250 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/commonjs-everywhere requires esprima@'1.x.x' but will load
+250 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/esprima,
+250 warn unmet dependency which is version 2.7.3
+251 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/commonjs-everywhere requires estraverse@'1.5.x' but will load
+251 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/estraverse,
+251 warn unmet dependency which is version 1.9.3
+252 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/commonjs-everywhere requires escodegen@'1.2.x' but will load
+252 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen,
+252 warn unmet dependency which is version 1.8.1
+253 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/estraverse/node_modules/gulp-bump requires semver@'^4.3.0' but will load
+253 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/semver,
+253 warn unmet dependency which is version 5.3.0
+254 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/estraverse/node_modules/gulp-tag-version requires gulp-git@'~0.3.6' but will load
+254 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/estraverse/node_modules/gulp-git,
+254 warn unmet dependency which is version 1.15.1
+255 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/estraverse/node_modules/jshint requires lodash@'3.7.x' but will load
+255 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+255 warn unmet dependency which is version 4.17.4
+256 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/estraverse/node_modules/mocha requires debug@'2.2.0' but will load
+256 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+256 warn unmet dependency which is version 2.6.6
+257 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/optionator/node_modules/livescript requires source-map@'^0.5.6' but will load
+257 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/source-map,
+257 warn unmet dependency which is version 0.2.0
+258 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/optionator/node_modules/mocha requires debug@'2.2.0' but will load
+258 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+258 warn unmet dependency which is version 2.6.6
+259 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/gulp-eslint/node_modules/eslint requires optionator@'^0.5.0' but will load
+259 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/optionator,
+259 warn unmet dependency which is version 0.8.2
+260 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/gulp-mocha/node_modules/mocha requires debug@'2.2.0' but will load
+260 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+260 warn unmet dependency which is version 2.6.6
+261 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen/node_modules/gulp-mocha/node_modules/temp requires rimraf@'~2.2.6' but will load
+261 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+261 warn unmet dependency which is version 2.6.1
+262 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request/node_modules/karma-cli/node_modules/grunt requires colors@'~0.6.2' but will load
+262 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+262 warn unmet dependency which is version 1.1.2
+263 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request/node_modules/karma-cli/node_modules/grunt requires rimraf@'~2.2.8' but will load
+263 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+263 warn unmet dependency which is version 2.6.1
+264 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request/node_modules/karma-cli/node_modules/grunt requires lodash@'~0.9.2' but will load
+264 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+264 warn unmet dependency which is version 4.17.4
+265 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request/node_modules/karma-cli/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+265 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+265 warn unmet dependency which is version 3.3.4
+266 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request/node_modules/karma-cli/node_modules/grunt-eslint requires eslint@'^1.5.1' but will load
+266 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request/node_modules/eslint,
+266 warn unmet dependency which is version 2.13.1
+267 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-cli/node_modules/grunt requires colors@'~0.6.2' but will load
+267 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+267 warn unmet dependency which is version 1.1.2
+268 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-cli/node_modules/grunt requires rimraf@'~2.2.8' but will load
+268 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+268 warn unmet dependency which is version 2.6.1
+269 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-cli/node_modules/grunt requires lodash@'~0.9.2' but will load
+269 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+269 warn unmet dependency which is version 4.17.4
+270 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-cli/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+270 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+270 warn unmet dependency which is version 3.3.4
+271 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-firefox-launcher/node_modules/grunt requires colors@'~0.6.2' but will load
+271 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+271 warn unmet dependency which is version 1.1.2
+272 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-firefox-launcher/node_modules/grunt requires rimraf@'~2.2.8' but will load
+272 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+272 warn unmet dependency which is version 2.6.1
+273 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-firefox-launcher/node_modules/grunt requires lodash@'~0.9.2' but will load
+273 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+273 warn unmet dependency which is version 4.17.4
+274 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-firefox-launcher/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+274 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+274 warn unmet dependency which is version 3.3.4
+275 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-mocha/node_modules/grunt requires colors@'~0.6.2' but will load
+275 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+275 warn unmet dependency which is version 1.1.2
+276 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-mocha/node_modules/grunt requires rimraf@'~2.2.8' but will load
+276 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+276 warn unmet dependency which is version 2.6.1
+277 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-mocha/node_modules/grunt requires lodash@'~0.9.2' but will load
+277 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+277 warn unmet dependency which is version 4.17.4
+278 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-mocha/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+278 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+278 warn unmet dependency which is version 3.3.4
+279 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/abab/node_modules/karma-mocha/node_modules/grunt-karma requires lodash@'^3.10.1' but will load
+279 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+279 warn unmet dependency which is version 4.17.4
+280 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/acorn-globals/node_modules/testit/node_modules/coveralls requires request@'2.79.0' but will load
+280 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+280 warn unmet dependency which is version 2.81.0
+281 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/acorn-globals/node_modules/testit/node_modules/sauce-test requires browserify@'^8.1.0' but will load
+281 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/browserify,
+281 warn unmet dependency which is version 14.3.0
+282 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/acorn-globals/node_modules/testit/node_modules/sauce-test requires chalk@'^0.5.1' but will load
+282 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/acorn-globals/node_modules/testit/node_modules/chalk,
+282 warn unmet dependency which is version 1.1.3
+283 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/acorn-globals/node_modules/testit/node_modules/sauce-test requires promise@'^6.0.1' but will load
+283 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/acorn-globals/node_modules/testit/node_modules/promise,
+283 warn unmet dependency which is version 7.1.1
+284 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/whatwg-encoding/node_modules/got/node_modules/coveralls requires request@'2.79.0' but will load
+284 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+284 warn unmet dependency which is version 2.81.0
+285 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/stealthy-require/node_modules/webpack requires acorn@'^3.0.0' but will load
+285 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/acorn,
+285 warn unmet dependency which is version 4.0.11
+286 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/chalk/node_modules/coveralls requires request@'2.79.0' but will load
+286 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+286 warn unmet dependency which is version 2.81.0
+287 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/chalk/node_modules/nyc requires lodash@'^3.10.0' but will load
+287 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/lodash,
+287 warn unmet dependency which is version 4.13.1
+288 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/chalk/node_modules/xo requires resolve-from@'^2.0.0' but will load
+288 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/chalk/node_modules/resolve-from,
+288 warn unmet dependency which is version 1.0.1
+289 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-coveralls/node_modules/coveralls requires request@'2.79.0' but will load
+289 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+289 warn unmet dependency which is version 2.81.0
+290 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-coveralls/node_modules/gulp-util requires through2@'^2.0.0' but will load
+290 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-coveralls/node_modules/through2,
+290 warn unmet dependency which is version 1.1.1
+291 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-coveralls/node_modules/istanbul requires escodegen@'1.7.x' but will load
+291 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen,
+291 warn unmet dependency which is version 1.8.1
+292 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-coveralls/node_modules/jshint requires lodash@'3.7.x' but will load
+292 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/lodash,
+292 warn unmet dependency which is version 4.13.1
+293 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-coveralls/node_modules/mocha requires debug@'2.2.0' but will load
+293 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+293 warn unmet dependency which is version 2.6.6
+294 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-eslint/node_modules/gulp-util requires object-assign@'^3.0.0' but will load
+294 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-eslint/node_modules/object-assign,
+294 warn unmet dependency which is version 4.1.1
+295 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-eslint/node_modules/gulp-util requires vinyl@'^0.5.0' but will load
+295 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-eslint/node_modules/vinyl,
+295 warn unmet dependency which is version 1.2.0
+296 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-eslint/node_modules/mocha requires debug@'2.2.0' but will load
+296 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+296 warn unmet dependency which is version 2.6.6
+297 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-mocha/node_modules/mocha requires debug@'2.2.0' but will load
+297 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+297 warn unmet dependency which is version 2.6.6
+298 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-mocha/node_modules/temp requires rimraf@'~2.2.6' but will load
+298 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/rimraf,
+298 warn unmet dependency which is version 2.5.4
+299 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-istanbul/node_modules/istanbul-threshold-checker requires istanbul@'0.3.*' but will load
+299 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-istanbul/node_modules/istanbul,
+299 warn unmet dependency which is version 0.4.5
+300 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-istanbul/node_modules/istanbul-threshold-checker requires lodash@'3.6.*' but will load
+300 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/lodash,
+300 warn unmet dependency which is version 4.13.1
+301 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-istanbul/node_modules/jshint requires lodash@'3.7.x' but will load
+301 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/lodash,
+301 warn unmet dependency which is version 4.13.1
+302 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request-promise-native/node_modules/gulp-istanbul/node_modules/mocha requires debug@'2.2.0' but will load
+302 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+302 warn unmet dependency which is version 2.6.6
+303 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/sax/node_modules/standard requires eslint@'~3.10.2' but will load
+303 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/eslint,
+303 warn unmet dependency which is version 3.19.0
+304 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/symbol-tree/node_modules/coveralls requires request@'2.79.0' but will load
+304 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+304 warn unmet dependency which is version 2.81.0
+305 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/symbol-tree/node_modules/babel-eslint/node_modules/espree requires acorn@'^5.0.1' but will load
+305 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/acorn,
+305 warn unmet dependency which is version 4.0.11
+306 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/webidl-conversions/node_modules/mocha requires debug@'2.0.0' but will load
+306 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+306 warn unmet dependency which is version 2.6.6
+307 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/whatwg-url/node_modules/mocha requires debug@'2.2.0' but will load
+307 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+307 warn unmet dependency which is version 2.6.6
+308 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/whatwg-url/node_modules/webidl-conversions/node_modules/mocha requires debug@'2.0.0' but will load
+308 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+308 warn unmet dependency which is version 2.6.6
+309 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/xml-name-validator/node_modules/jshint requires lodash@'3.7.x' but will load
+309 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+309 warn unmet dependency which is version 4.17.4
+310 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/xml-name-validator/node_modules/mocha requires debug@'2.2.0' but will load
+310 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+310 warn unmet dependency which is version 2.6.6
+311 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-chrome-launcher/node_modules/grunt requires colors@'~0.6.2' but will load
+311 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+311 warn unmet dependency which is version 1.1.2
+312 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-chrome-launcher/node_modules/grunt requires rimraf@'~2.2.8' but will load
+312 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+312 warn unmet dependency which is version 2.6.1
+313 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-chrome-launcher/node_modules/grunt requires lodash@'~0.9.2' but will load
+313 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+313 warn unmet dependency which is version 4.17.4
+314 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-chrome-launcher/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+314 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+314 warn unmet dependency which is version 3.3.4
+315 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-chrome-launcher/node_modules/grunt requires which@'~1.0.5' but will load
+315 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-chrome-launcher/node_modules/which,
+315 warn unmet dependency which is version 1.2.14
+316 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-chrome-launcher/node_modules/grunt-karma requires lodash@'^3.10.1' but will load
+316 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+316 warn unmet dependency which is version 4.17.4
+317 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-mocha/node_modules/grunt-karma requires lodash@'^3.10.1' but will load
+317 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+317 warn unmet dependency which is version 4.17.4
+318 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/st/node_modules/request requires tough-cookie@'~2.2.0' but will load
+318 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/tough-cookie,
+318 warn unmet dependency which is version 2.3.2
+319 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/webidl2js/node_modules/co/node_modules/istanbul-harmony requires escodegen@'1.6.x' but will load
+319 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen,
+319 warn unmet dependency which is version 1.8.1
+320 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/webidl2js/node_modules/co/node_modules/mocha requires debug@'2.2.0' but will load
+320 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+320 warn unmet dependency which is version 2.6.6
+321 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/istanbul requires escodegen@'1.7.x' but will load
+321 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/escodegen,
+321 warn unmet dependency which is version 1.8.1
+322 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/jscs requires lodash@'~3.10.0' but will load
+322 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+322 warn unmet dependency which is version 4.17.4
+323 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma requires bluebird@'^2.9.27' but will load
+323 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/bluebird,
+323 warn unmet dependency which is version 3.5.0
+324 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma requires lodash@'^3.8.0' but will load
+324 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+324 warn unmet dependency which is version 4.17.4
+325 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/jshint requires lodash@'3.7.x' but will load
+325 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+325 warn unmet dependency which is version 4.17.4
+326 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/mocha requires debug@'2.2.0' but will load
+326 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+326 warn unmet dependency which is version 2.6.6
+327 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/chalk/node_modules/coveralls requires request@'2.79.0' but will load
+327 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+327 warn unmet dependency which is version 2.81.0
+328 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/chalk/node_modules/nyc requires lodash@'^3.10.0' but will load
+328 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+328 warn unmet dependency which is version 4.17.4
+329 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/chalk/node_modules/xo requires resolve-from@'^2.0.0' but will load
+329 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/chalk/node_modules/resolve-from,
+329 warn unmet dependency which is version 1.0.1
+330 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-mocha/node_modules/grunt requires colors@'~0.6.2' but will load
+330 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+330 warn unmet dependency which is version 1.1.2
+331 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-mocha/node_modules/grunt requires rimraf@'~2.2.8' but will load
+331 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+331 warn unmet dependency which is version 2.6.1
+332 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-mocha/node_modules/grunt requires lodash@'~0.9.2' but will load
+332 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+332 warn unmet dependency which is version 4.17.4
+333 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-mocha/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+333 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+333 warn unmet dependency which is version 3.3.4
+334 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-mocha/node_modules/grunt-karma requires lodash@'^3.10.1' but will load
+334 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+334 warn unmet dependency which is version 4.17.4
+335 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/browser-unpack requires acorn@'^1.0.3' but will load
+335 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/acorn,
+335 warn unmet dependency which is version 4.0.11
+336 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/grunt-contrib-jshint requires jshint@'~2.5.0' but will load
+336 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/jshint,
+336 warn unmet dependency which is version 2.9.4
+337 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/grunt-mocha-test requires mocha@'~1.20.0' but will load
+337 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/mocha,
+337 warn unmet dependency which is version 2.5.3
+338 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/grunt requires colors@'~0.6.2' but will load
+338 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+338 warn unmet dependency which is version 1.1.2
+339 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/grunt requires minimatch@'~0.2.12' but will load
+339 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/minimatch,
+339 warn unmet dependency which is version 1.0.0
+340 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/grunt requires rimraf@'~2.2.8' but will load
+340 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+340 warn unmet dependency which is version 2.6.1
+341 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/grunt requires lodash@'~0.9.2' but will load
+341 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/lodash,
+341 warn unmet dependency which is version 3.10.1
+342 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+342 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+342 warn unmet dependency which is version 3.3.4
+343 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/grunt-release requires q@'~1.0.0' but will load
+343 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/q,
+343 warn unmet dependency which is version 1.5.0
+344 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/tsify requires convert-source-map@'^1.1.0' but will load
+344 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-browserify/node_modules/convert-source-map,
+344 warn unmet dependency which is version 0.3.5
+345 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-cli/node_modules/grunt requires colors@'~0.6.2' but will load
+345 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+345 warn unmet dependency which is version 1.1.2
+346 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-cli/node_modules/grunt requires rimraf@'~2.2.8' but will load
+346 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+346 warn unmet dependency which is version 2.6.1
+347 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-cli/node_modules/grunt requires lodash@'~0.9.2' but will load
+347 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+347 warn unmet dependency which is version 4.17.4
+348 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-cli/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+348 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+348 warn unmet dependency which is version 3.3.4
+349 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/mocha-sugar-free/node_modules/karma-cli/node_modules/grunt-eslint requires eslint@'^1.5.1' but will load
+349 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/eslint,
+349 warn unmet dependency which is version 3.19.0
+350 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/sauce-connect-launcher requires lodash@'3.10.1' but will load
+350 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+350 warn unmet dependency which is version 4.17.4
+351 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/sauce-connect-launcher requires rimraf@'2.4.3' but will load
+351 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+351 warn unmet dependency which is version 2.6.1
+352 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-karma requires lodash@'^3.10.1' but will load
+352 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+352 warn unmet dependency which is version 4.17.4
+353 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-auto-release/node_modules/grunt requires colors@'~0.6.2' but will load
+353 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+353 warn unmet dependency which is version 1.1.2
+354 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-auto-release/node_modules/grunt requires rimraf@'~2.2.8' but will load
+354 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+354 warn unmet dependency which is version 2.6.1
+355 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-auto-release/node_modules/grunt requires lodash@'~0.9.2' but will load
+355 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+355 warn unmet dependency which is version 4.17.4
+356 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-auto-release/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+356 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+356 warn unmet dependency which is version 3.3.4
+357 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-bump/node_modules/grunt-contrib-nodeunit requires nodeunit@'^0.9.0' but will load
+357 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/nodeunit,
+357 warn unmet dependency which is version 0.10.2
+358 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-github-releaser/node_modules/grunt requires colors@'~0.6.2' but will load
+358 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+358 warn unmet dependency which is version 1.1.2
+359 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-github-releaser/node_modules/grunt requires rimraf@'~2.2.8' but will load
+359 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+359 warn unmet dependency which is version 2.6.1
+360 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-github-releaser/node_modules/grunt requires lodash@'~0.9.2' but will load
+360 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+360 warn unmet dependency which is version 4.17.4
+361 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-github-releaser/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+361 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+361 warn unmet dependency which is version 3.3.4
+362 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-github-releaser/node_modules/grunt-contrib-nodeunit requires nodeunit@'~0.9.0' but will load
+362 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/nodeunit,
+362 warn unmet dependency which is version 0.10.2
+363 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-github-releaser/node_modules/grunt-istanbul requires chalk@'1.1.1' but will load
+363 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-github-releaser/node_modules/chalk,
+363 warn unmet dependency which is version 1.1.3
+364 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-github-releaser/node_modules/grunt-jscs requires lodash@'~4.6.1' but will load
+364 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+364 warn unmet dependency which is version 4.17.4
+365 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/load-grunt-tasks/node_modules/xo requires eslint-plugin-promise@'^3.4.0' but will load
+365 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/eslint-plugin-promise,
+365 warn unmet dependency which is version 3.3.0
+366 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-npm/node_modules/grunt requires colors@'~0.6.2' but will load
+366 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+366 warn unmet dependency which is version 1.1.2
+367 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-npm/node_modules/grunt requires rimraf@'~2.2.8' but will load
+367 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+367 warn unmet dependency which is version 2.6.1
+368 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-npm/node_modules/grunt requires lodash@'~0.9.2' but will load
+368 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+368 warn unmet dependency which is version 4.17.4
+369 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-npm/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+369 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+369 warn unmet dependency which is version 3.3.4
+370 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-changelog/node_modules/grunt requires colors@'~0.6.2' but will load
+370 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+370 warn unmet dependency which is version 1.1.2
+371 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-changelog/node_modules/grunt requires rimraf@'~2.2.8' but will load
+371 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+371 warn unmet dependency which is version 2.6.1
+372 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-changelog/node_modules/grunt requires lodash@'~0.9.2' but will load
+372 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+372 warn unmet dependency which is version 4.17.4
+373 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-changelog/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+373 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+373 warn unmet dependency which is version 3.3.4
+374 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-changelog/node_modules/grunt-contrib-nodeunit requires nodeunit@'~0.9.0' but will load
+374 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/nodeunit,
+374 warn unmet dependency which is version 0.10.2
+375 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-changelog/node_modules/grunt-istanbul requires chalk@'1.1.1' but will load
+375 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-changelog/node_modules/chalk,
+375 warn unmet dependency which is version 1.1.3
+376 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/grunt-conventional-changelog/node_modules/grunt-jscs requires lodash@'~4.6.1' but will load
+376 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/lodash,
+376 warn unmet dependency which is version 4.17.4
+377 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-sauce-launcher/node_modules/karma-jasmine/node_modules/grunt-eslint requires eslint@'^2.0.0' but will load
+377 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/eslint,
+377 warn unmet dependency which is version 3.19.0
+378 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/portfinder/node_modules/vows requires glob@'~4.0.6' but will load
+378 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/portfinder/node_modules/glob,
+378 warn unmet dependency which is version 6.0.4
+379 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/portfinder/node_modules/glob/node_modules/tap requires glob@'^7.0.0' but will load
+379 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/portfinder/node_modules/glob,
+379 warn unmet dependency which is version 6.0.4
+380 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/portfinder/node_modules/glob/node_modules/inflight/node_modules/tap requires glob@'^7.0.0' but will load
+380 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/portfinder/node_modules/glob,
+380 warn unmet dependency which is version 6.0.4
+381 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/portfinder/node_modules/glob/node_modules/once/node_modules/tap requires glob@'^7.0.0' but will load
+381 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/portfinder/node_modules/glob,
+381 warn unmet dependency which is version 6.0.4
+382 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/portfinder/node_modules/glob/node_modules/inherits/node_modules/tap requires glob@'^7.0.0' but will load
+382 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/portfinder/node_modules/glob,
+382 warn unmet dependency which is version 6.0.4
+383 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/portfinder/node_modules/glob/node_modules/minimatch/node_modules/tap requires glob@'^7.0.0' but will load
+383 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/portfinder/node_modules/glob,
+383 warn unmet dependency which is version 6.0.4
+384 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/mocha requires debug@'2.2.0' but will load
+384 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+384 warn unmet dependency which is version 2.6.6
+385 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/phantomjs requires request@'~2.67.0' but will load
+385 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/request,
+385 warn unmet dependency which is version 2.81.0
+386 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/minimatch/node_modules/brace-expansion/node_modules/tape requires resolve@'~1.1.7' but will load
+386 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/resolve,
+386 warn unmet dependency which is version 1.3.3
+387 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-cli/node_modules/findup-sync requires lodash@'~2.4.1' but will load
+387 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/lodash,
+387 warn unmet dependency which is version 3.10.1
+388 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-cli/node_modules/grunt requires colors@'~0.6.2' but will load
+388 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+388 warn unmet dependency which is version 1.1.2
+389 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-cli/node_modules/grunt requires minimatch@'~0.2.12' but will load
+389 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/minimatch,
+389 warn unmet dependency which is version 3.0.4
+390 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-cli/node_modules/grunt requires rimraf@'~2.2.8' but will load
+390 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+390 warn unmet dependency which is version 2.6.1
+391 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-cli/node_modules/grunt requires lodash@'~0.9.2' but will load
+391 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/lodash,
+391 warn unmet dependency which is version 3.10.1
+392 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-cli/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+392 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+392 warn unmet dependency which is version 3.3.4
+393 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-contrib-jshint/node_modules/jshint requires minimatch@'2.0.x' but will load
+393 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/minimatch,
+393 warn unmet dependency which is version 3.0.4
+394 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-contrib-jshint/node_modules/jshint requires lodash@'3.7.x' but will load
+394 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/lodash,
+394 warn unmet dependency which is version 3.10.1
+395 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-contrib-jshint/node_modules/grunt requires colors@'~0.6.2' but will load
+395 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+395 warn unmet dependency which is version 1.1.2
+396 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-contrib-jshint/node_modules/grunt requires minimatch@'~0.2.12' but will load
+396 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/minimatch,
+396 warn unmet dependency which is version 3.0.4
+397 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-contrib-jshint/node_modules/grunt requires rimraf@'~2.2.8' but will load
+397 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+397 warn unmet dependency which is version 2.6.1
+398 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-contrib-jshint/node_modules/grunt requires lodash@'~0.9.2' but will load
+398 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/lodash,
+398 warn unmet dependency which is version 3.10.1
+399 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-contrib-jshint/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+399 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+399 warn unmet dependency which is version 3.3.4
+400 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-contrib-jshint/node_modules/grunt-contrib-nodeunit requires nodeunit@'~0.9.0' but will load
+400 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/nodeunit,
+400 warn unmet dependency which is version 0.10.2
+401 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/load-grunt-tasks/node_modules/grunt-cli requires resolve@'~1.1.0' but will load
+401 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/resolve,
+401 warn unmet dependency which is version 1.3.3
+402 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/karma-phantomjs-launcher/node_modules/grunt requires colors@'~0.6.2' but will load
+402 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+402 warn unmet dependency which is version 1.1.2
+403 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/karma-phantomjs-launcher/node_modules/grunt requires minimatch@'~0.2.12' but will load
+403 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/minimatch,
+403 warn unmet dependency which is version 3.0.4
+404 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/karma-phantomjs-launcher/node_modules/grunt requires rimraf@'~2.2.8' but will load
+404 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+404 warn unmet dependency which is version 2.6.1
+405 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/karma-phantomjs-launcher/node_modules/grunt requires lodash@'~0.9.2' but will load
+405 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/lodash,
+405 warn unmet dependency which is version 3.10.1
+406 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/karma-phantomjs-launcher/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+406 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+406 warn unmet dependency which is version 3.3.4
+407 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/coffee-script requires mkdirp@'~0.3.5' but will load
+407 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/mkdirp,
+407 warn unmet dependency which is version 0.5.1
+408 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/grunt requires coffee-script@'~1.3.3' but will load
+408 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/coffee-script,
+408 warn unmet dependency which is version 1.8.0
+409 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/grunt requires colors@'~0.6.2' but will load
+409 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+409 warn unmet dependency which is version 1.1.2
+410 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/grunt requires minimatch@'~0.2.12' but will load
+410 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/minimatch,
+410 warn unmet dependency which is version 3.0.4
+411 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/grunt requires rimraf@'~2.2.8' but will load
+411 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+411 warn unmet dependency which is version 2.6.1
+412 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/grunt requires lodash@'~0.9.2' but will load
+412 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/lodash,
+412 warn unmet dependency which is version 3.10.1
+413 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+413 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+413 warn unmet dependency which is version 3.3.4
+414 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/grunt-contrib-clean requires rimraf@'~2.2.1' but will load
+414 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+414 warn unmet dependency which is version 2.6.1
+415 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/grunt-env requires lodash@'~2.4.1' but will load
+415 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/lodash,
+415 warn unmet dependency which is version 3.10.1
+416 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/mocha requires debug@'2.0.0' but will load
+416 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/debug,
+416 warn unmet dependency which is version 2.6.6
+417 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/mocha requires mkdirp@'0.5.0' but will load
+417 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/grunt-mocha-test/node_modules/mkdirp,
+417 warn unmet dependency which is version 0.5.1
+418 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/karma-jasmine/node_modules/grunt requires colors@'~0.6.2' but will load
+418 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/colors,
+418 warn unmet dependency which is version 1.1.2
+419 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/karma-jasmine/node_modules/grunt requires minimatch@'~0.2.12' but will load
+419 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/minimatch,
+419 warn unmet dependency which is version 3.0.4
+420 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/karma-jasmine/node_modules/grunt requires rimraf@'~2.2.8' but will load
+420 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/rimraf,
+420 warn unmet dependency which is version 2.6.1
+421 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/karma-jasmine/node_modules/grunt requires lodash@'~0.9.2' but will load
+421 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/lodash,
+421 warn unmet dependency which is version 3.10.1
+422 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/karma-jasmine/node_modules/grunt requires underscore.string@'~2.2.1' but will load
+422 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/underscore.string,
+422 warn unmet dependency which is version 3.3.4
+423 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/karma-browserify/node_modules/karma-jasmine/node_modules/grunt-eslint requires eslint@'^2.0.0' but will load
+423 warn unmet dependency /home/ubuntu/workspace/GJC_Servidorsito/node_modules/jsdom/node_modules/eslint,
+423 warn unmet dependency which is version 3.19.0
+424 verbose stack Error: The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+424 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/lib/install.js:125:32
+424 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/lib/install.js:268:7
+424 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+424 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+424 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+424 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+424 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+424 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+424 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+424 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+425 verbose cwd /home/ubuntu/workspace/GJC_Servidorsito
+426 error Linux 4.9.17-c9
+427 error argv "/home/ubuntu/.nvm/versions/node/v4.7.3/bin/node" "/home/ubuntu/.nvm/versions/node/v4.7.3/bin/npm" "install" "jquery" "--save"
+428 error node v4.7.3
+429 error npm  v2.15.11
+430 error code EPEERINVALID
+431 error peerinvalid The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+431 error peerinvalid Peer grunt-exec@2.0.0 wants grunt@>=0.4
+431 error peerinvalid Peer grunt-contrib-connect@1.0.2 wants grunt@>=0.4.0
+432 verbose exit [ 1, true ]

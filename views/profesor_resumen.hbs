@@ -17,8 +17,8 @@
                 <ul class="nav navbar-nav">
                     <li><a href="../profesor_resumen/{{idUser}}"><div class="text-primary col-sm-6">Resumen</div></a></li>
                     <li><a href="../profesor_materias/{{idUser}}">Materias</a></li>
-                    <li><a href="/">prueba2</a></li>
-                    <li><a href="/login"><div class="text-primary col-sm-6">{{datos.name}}</div> <div class="col-sm-6">Salir</div></a></li>
+                    <li><a href="../profesor_nueva/{{idUser}}">Crear Tarea</a></li>
+                    <li><a href="/login"><div class="text-primary col-sm-6">{{title}}</div> <div class="col-sm-6">Salir</div></a></li>
                 </ul>
             </div>
         </div>
@@ -31,13 +31,13 @@
     		         <div class="col-sm-12" ><B>{{this.nombre_curso}}</B></div>
     		     </div>
     		     {{#each this.talleres}}
-    		         <div class="Titulos item_curso col-sm-12">
-    		         <div class="col-sm-12">Actividad: {{this.id_tarea}}</div>
+    		         <div class="Actividad item_curso col-sm-12">
+    		             <div class="col-sm-12">Actividad: {{this.id_tarea}}</div>
     		         </div>
         		     {{#each ../estudiantes}}
-        		         <div class="Titulos item_curso col-sm-12">
-        		          <div class="nombre col-sm-8">{{this.nombre_usuario}}</div>
-                		  <div class="col-sm-4"><button>hola</button></div>
+        		         <div class="item_curso col-sm-12">
+        		          <div class="Estudiantes_lista nombre col-sm-12" align="left">Estudiante: {{this.nombre_usuario}}</div>
+        		          
                 		 </div>
         		     {{/each}}
     		     {{/each}}

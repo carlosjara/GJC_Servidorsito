@@ -49,6 +49,7 @@ body{
 	background-color: rgb(150,150,150);
 	border-style: inset;
 	color: white;
+	margin: 2px;
 }
 .Actividad .nombre {
 	text-align: left;
@@ -57,4 +58,9 @@ body{
 .Titulos {
 	background-color: rgb(200,200,200);
 	border-style: outset;
+}
+.Estudiantes_lista{
+	background-color: rgb(100,100,100);
+	margin: 5px;
+	color: white;
 }

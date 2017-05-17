@@ -16,8 +16,8 @@
             <div class="col-sm-8 collapse navbar-collapse" id="navbarCollapse">
                 <ul class="nav navbar-nav">
                     <li><a href="../estudiante_resumen/{{idUser}}">Resumen</a></li>
-                    <li><a href="../estudiante_materias/{{idUser}}"><div class="text-primary col-sm-6">Materias</div></a></li>
-                    <li><a href="../estudiante_pendiente/{{idUser}}">Tareas Pendientes</a></li>
+                    <li><a href="../estudiante_materias/{{idUser}}">Materias</a></li>
+                    <li><a href="../estudiante_pendiente/{{idUser}}"><div class="text-primary">Tareas Pendientes</div></a></li>
                     <li><a href="/login"><div class="text-primary col-sm-6">{{datos.name}}</div> <div class="col-sm-6">Salir</div></a></li>
                 </ul>
             </div>
@@ -30,7 +30,7 @@
     		     <div class="Titulos col-sm-12">{{this.nombre_curso}}</div>
     		     {{#each ../datos.talleres}}
     		         {{#ifCond this.id_curso '==' ../this.id_curso}}
-    		             <div class="Actividad col-sm-12" id="cursoBor"></div>
+    		             <div class="col-sm-12" id="cursoBor"></div>
             		     <div class="col-sm-12">
             		         <div class="Actividad col-sm-8">Actividad: {{this.id_tarea}}</div>
             		         <div class="col-sm-1"></div>

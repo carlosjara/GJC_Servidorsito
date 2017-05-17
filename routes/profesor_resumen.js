@@ -43,11 +43,6 @@ router.get('/:id', function(req, res) {
     var userCursos = [];
     var talleresCursos = [];
     var estudiantesCursos = [];
-
-    
-    
-
-    
     var doneOneCourse = _.after(2, function() {
         console.log(userCursos);
     });
@@ -58,7 +53,6 @@ router.get('/:id', function(req, res) {
     client.post("https://rest-hectordavid1228.c9users.io:8081/nameById", argsUser, function (data, response) {
         // parsed response body as js object 
         userName = data.res[0]["nombre_usuario"];
-
         var argsCursos = {
             data: {id : usuario_id},
             headers: { "Content-Type": "application/json" }
@@ -66,13 +60,12 @@ router.get('/:id', function(req, res) {
         client.post("https://rest-hectordavid1228.c9users.io:8081/getCoursesByTeacher", argsCursos, function (data, response) {
             // parsed response body as js object
             userCursos = data.cursos;
-            
             var modifyCourses = function(){
-                a=userCursos;
-                for(i in userCursos)
+                var a=userCursos;
+                for(var i in userCursos)
                 {
-                    talleres=[];
-                    for(j in talleresCursos)
+                    var talleres=[];
+                    for(var j in talleresCursos)
                     {
                         if(talleresCursos[j].id_curso==userCursos[i].id_curso)
                         {
@@ -81,8 +74,8 @@ router.get('/:id', function(req, res) {
                         }
                     }
                     a[i].talleres=talleres;
-                    estudiantes=[];
-                    for(k in estudiantesCursos)
+                    var estudiantes=[];
+                    for(var k in estudiantesCursos)
                     {
                         if(estudiantesCursos[k].id_curso==userCursos[i].id_curso)
                         {
@@ -100,11 +93,10 @@ router.get('/:id', function(req, res) {
                 res.render('profesor_resumen', json);
             });
             
-            for (i in userCursos)
+            for (var i in userCursos)
             {
                 
                 var id_c=(userCursos[i].id_curso).toString();
-                console.log(id_c);
                 var argsTalleres = {
                     data: {"id" : id_c},
                     headers: { "Content-Type": "application/json" }

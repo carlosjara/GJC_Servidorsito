@@ -43,7 +43,21 @@ router.post('/',function(req,res){
             res.render('login',{title: 'Login', user: {name: req.body.name , password: req.body.password}, user_problems: user});
         }else{
             var id = encodeURIComponent(res1["id_usuario"]);
-            res.redirect('/estudiante_resumen/' + id);
+            var typeUserValidator = {
+                        data: {"id":id},
+                        headers: { "Content-Type": "application/json" }
+                      };
+                      
+            client.post("https://rest-hectordavid1228.c9users.io:8081/getUserType", typeUserValidator, function (data, response) {
+                // parsed response body as js object
+                res1 = data[0].rol;
+                if (res1 == 1){
+                    res.redirect('/estudiante_resumen/' + id);
+                }else if (res1 == 2){
+                    res.redirect('/profesor_resumen/' + id);
+                }
+              });
+            
         }
     });
     

@@ -23,7 +23,8 @@ var estudiantes_resumen = require('./routes/estudiante_resumen');
 var est_materias = require('./routes/estudiante_materias');
 var profesores_resumen = require('./routes/profesor_resumen');
 var profesores_materias = require('./routes/profesor_materias');
-
+var estudiante_pendiente = require('./routes/estudiante_pendiente');
+var profesor_nueva = require('./routes/profesor_nueva');
 
 var app = express();
 
@@ -44,8 +45,11 @@ app.use('/validation', validation);
 app.use('/login', login);
 app.use('/estudiante_resumen', estudiantes_resumen);
 app.use('/estudiante_materias', est_materias);
+app.use('/estudiante_pendiente', estudiante_pendiente);
 app.use('/profesor_resumen', profesores_resumen);
-app.use('/profesor_materias', profesores_resumen);
+app.use('/profesor_materias', profesores_materias);
+app.use('/profesor_nueva', profesor_nueva);
+
 
 
 // catch 404 and forward to error handler
@@ -65,5 +69,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
 app.listen(8081);
 module.exports = app;

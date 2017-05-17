@@ -1,0 +1,68 @@
+<div class="estudiante resumen">
+	<div class="header">
+		<nav id="navbar_index" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="col-sm-4 navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span></span><img src="../images/logo_app.png" class="img-responsive" alt="Cinque Terre"></span>
+                
+            </div>
+            
+            <div class="col-sm-8 collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../profesor_resumen/{{idUser}}">Resumen</a></li>
+                    <li><a href="../profesor_materias/{{idUser}}"><div class="text-primary col-sm-6">Materias</div></a></li>
+                    <li><a href="../profesor_nueva/{{idUser}}">Crear Tarea</a></li>
+                    <li><a href="/login"><div class="text-primary col-sm-6">{{title}}</div> <div class="col-sm-6">Salir</div></a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+	</div>
+	<div class="Content">
+		 {{#each datos}}
+		     <div class="Curso col-sm-12">
+    		     <div class="item_curso col-sm-12">
+    		         <div class="Titulos col-sm-10"><Strong>{{this.nombre_curso}}</Strong></div>
+    		         <a href="{{this.id_propietario}}/materia/{{this.id_curso}}"><div class="Titulos col-sm-2"><Strong>Ver. Estudiantes</Strong></div></a>
+    		     </div>
+    		     {{#each ../talleres}}
+    		         {{#ifCond this.id_curso '==' ../this.id_curso}}
+                        <div class="Actividad col-sm-12">Actividad: {{this.id_tarea}}</div>
+                        <div class="col-sm-6" align="left">Descripcion de la Actividad </div>
+                        <div class="col-sm-6">Fechas de la Actividad </div>
+                        <form action="/profesor_materias/ActualizarMateria/{{../id_curso}}/actividad/{{this.id_tarea}}/profesor/{{../../idUser}}" method="post">
+                            <div class="col-sm-12">
+                                <div class="col-sm-6"></div>
+                                <div class="col-sm-3">Modificar Fecha Inicio</div>
+                                <div class="col-sm-3">Modificar Fecha Fin</div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="col-sm-6"></div>
+                                <div class="col-sm-3">Anterior: <Strong>{{this.fecha_inicio}}</Strong></div>
+                                <div class="col-sm-3">Anterior: <Strong>{{this.fecha_fin}}</Strong></div>
+                            </div>
+                            <div class="col-sm-6" align="left"><textarea name="descripcion" rows="4" cols="40">{{this.descripcion}}</textarea></div>
+                            <div class="col-sm-3">Nueva: <input type="date" name="fecha_inicio" step="1" value="{{this.fecha_inicio}}"></div>
+                            <div class="col-sm-3">Nueva: <input type="date" name="fecha_fin" step="1" value="{{this.fecha_fin}}"></div>
+                            <div class="col-sm-12">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4"><button type="submit" value="Submit">Actualizar Actividad</button></div>
+                                <div class="col-sm-4"></div>
+                            </div>
+                        </form>
+                    {{/ifCond}}
+    		     {{/each}}
+    		 </div>
+        {{/each}}
+		 
+		 
+	</div>	
+	<div class="RightBar">
+
+</div>
