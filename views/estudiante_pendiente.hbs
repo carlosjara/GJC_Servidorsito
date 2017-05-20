@@ -49,17 +49,18 @@
             		         <div class="col-sm-9" align="left">{{this.fecha_fin}}</div>
             		     </div>
             		     <div class="col-sm-12" align="left">
-            		         <div class="col-sm-3" align="left">Nombre Archivo: </div>
-            		         <div class="col-sm-7" align="left" >{{this.nombre}}</div>
-            		         <button type="button" class="col-sm-2 btn btn-primary">Seleccionar</button>
+            		         <div class="col-sm-3" align="left">Nombre Archivo: </div><div class="col-sm-3" align="left">{{this.nombre}}</div>
+                            <form action="/estudiante_materias/file/{{../../idUser}}/tarea/{{this.id_tarea}}" enctype="multipart/form-data" method="post">
+                                <input class="col-sm-4 " align="left"type="file" name="upload" multiple>
+                                <input class="col-sm-2 btn btn-primary" type="submit" value="Subir">
+                            </form>
+            		         
             		     </div>
             		     <div class="Archivo col-sm-12">
             		         <div class="col-sm-7" align="left" >Nota</div>
             		         <div class="col-sm-5" align="left">{{this.nota}}</div>
             		     </div>
-            		     <div class="col-sm-4"></div>
-            		     <button type="button" class="col-sm-4 btn btn-primary">Enviar</button>
-            		     <div class="col-sm-4"></div>
+            		     
             		{{/ifCond}}
     		     {{/each}}
     		 </div>

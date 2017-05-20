@@ -44,6 +44,7 @@ router.get('/:id', function(req, res) {
     var talleresUser = [];
     
     var renderResumen = _.after(1,function() {
+        console.log(talleresUser);
         var json = {title: userName ,idUser: usuario_id, datos : { name: userName , cursos: userCursos, talleres: talleresUser}}
         res.render('estudiante_resumen', json);
     });

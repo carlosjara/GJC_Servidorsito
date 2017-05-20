@@ -25,6 +25,9 @@ var profesores_resumen = require('./routes/profesor_resumen');
 var profesores_materias = require('./routes/profesor_materias');
 var estudiante_pendiente = require('./routes/estudiante_pendiente');
 var profesor_nueva = require('./routes/profesor_nueva');
+var administrador_cursos = require('./routes/administrador_cursos');
+var administrador_estudiantes = require('./routes/administrador_estudiantes');
+var administrador_matricular = require('./routes/administrador_matricular');
 
 var app = express();
 
@@ -49,6 +52,9 @@ app.use('/estudiante_pendiente', estudiante_pendiente);
 app.use('/profesor_resumen', profesores_resumen);
 app.use('/profesor_materias', profesores_materias);
 app.use('/profesor_nueva', profesor_nueva);
+app.use('/administrador_cursos', administrador_cursos);
+app.use('/administrador_estudiantes', administrador_estudiantes);
+app.use('/administrador_matricular', administrador_matricular);
 
 
 

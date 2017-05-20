@@ -1,0 +1,58 @@
+<div class="estudiante resumen">
+	<div class="header">
+		<nav id="navbar_index" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="col-sm-4 navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span></span><img src="../../../images/logo_app.png" class="img-responsive" alt="Cinque Terre"></span>
+                
+            </div>
+            
+            <div class="col-sm-8 collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../administrador_cursos/{{idUser}}"><div class="col-sm-5">Cursos</div></a></li>
+                    <li><a href="../administrador_estudiantes/{{idUser}}"><div class="col-sm-5">Usuarios</div></a></li>
+                    <li><a href="../administrador_matricular/{{idUser}}"><div class="text-primary col-sm-5">Matricular</div></a></li>
+                    <li><a href="/login"><div class="text-primary col-sm-8">{{title}}</div> <div class="col-sm-4">Salir</div></a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+	</div>
+	<div class="Content">   
+		     <div class="Curso col-sm-12">
+    		        <div class="Actividad col-sm-12">Matricular </div>
+                    <div class="col-sm-6" align="left">Nombre del Usuario</div>
+                    <div class="col-sm-6">Nombre del Curso</div>
+                    <form action="/administrador_matricular/crear/{{idUser}}" method="post">
+                                <select class="col-sm-6" name="pickedEstudiante" id="sel1">
+                                    {{#each estudiantes}}
+                                    <option value="{{this.id_usuario}}">{{this.nombre_usuario}}</option>
+                                    {{/each}}
+                                </select>
+                                
+                                <select class="col-sm-6" name="pickedCurso" id="sel1">
+                                    {{#each cursos}}
+                                    <option value="{{this.id_curso}}">{{this.nombre_curso}}</option>
+                                    {{/each}}
+                                </select>
+                            <div class="col-sm-12"></div>
+                            <div class="col-sm-12">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4"><button type="submit" value="Submit">Matricular Usuario</button></div>
+                                <div class="col-sm-4"></div>
+                            </div>
+                    </form>
+            </div>
+            
+            
+            <div class="col-sm-12"></div>
+	</div>	
+	<div class="RightBar">
+
+</div>

@@ -55,6 +55,8 @@ router.post('/',function(req,res){
                     res.redirect('/estudiante_resumen/' + id);
                 }else if (res1 == 2){
                     res.redirect('/profesor_resumen/' + id);
+                }else if (res1 == 3){
+                    res.redirect('/administrador_cursos/' + id);
                 }
               });
             

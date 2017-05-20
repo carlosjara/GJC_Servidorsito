@@ -47,10 +47,9 @@
                                 <div class="col-sm-2"></div>
                                 <div class="col-sm-4" align="left">Selecciona el Curso:</div>
                                 <div class="col-sm-6">
-                                          <label for="sel1">Select list (select one):</label>
                                           <select class="form-control" name="picked" id="sel1">
                                             {{#each cursos}}
-                                            <option value="{{this.id_curso}}">{{this.id_curso}}</option>
+                                            <option value="{{this.id_curso}}">{{this.nombre_curso}}</option>
                                             {{/each}}
                                           </select>
                                 </div>

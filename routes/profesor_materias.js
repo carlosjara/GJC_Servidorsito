@@ -61,6 +61,7 @@ router.get('/:id', function(req, res) {
             // parsed response body as js object
             userCursos = data.cursos;
             var renderMaterias = _.after((userCursos.length),function() {
+                console.log("--",talleresCursos);
                 var json = {title: userName ,idUser: usuario_id, datos : userCursos, talleres: talleresCursos}
                 res.render('profesor_materias', json);
             });
